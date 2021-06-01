@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  api:
+    build: .
+    ports:
+      - 8080:8080
+
+  mongodb:
+    image: bitnami/mongodb:latest
+    ports:
+      - 27017
+    volumes:
+    -  mongodb-data:/bitnami/mongodb
+
+volumes:
+  mongodb-data:
