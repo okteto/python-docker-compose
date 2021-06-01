@@ -1,0 +1,10 @@
+name: api
+command: bash
+volumes:
+- /root/.cache/pip
+sync:
+- '.:/usr/src/app'
+forward:
+- 8080:8080
+reverse:
+- 9000:9000
