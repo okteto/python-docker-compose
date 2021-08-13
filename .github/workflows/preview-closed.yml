@@ -1,0 +1,23 @@
+name: Delete Preview Environnment
+
+on: 
+  pull_request: 
+    types:
+      - closed
+
+jobs:
+  closed:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@master
+
+    - name: Login
+      uses: okteto/login@master
+      with:
+        token: ${{ secrets.OKTETO_TOKEN }}
+
+    - name: Delete preview environment
+      uses: okteto/destroy-preview@master
+      with:
+        name: pr-${{ github.event.number }}-youngestdev
