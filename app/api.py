@@ -6,7 +6,7 @@ app = FastAPI()
 @app.get("/")
 def welcome():
     return {
-        "message": "Hello from the community!"
+        "message": "Hello from the preview environment video!"
     }
 
 @app.post("/todo")
