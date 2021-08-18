@@ -6,7 +6,7 @@ app = FastAPI()
 @app.get("/")
 def welcome():
     return {
-        "message": "Hello from the developer community!"
+        "message": "Hello from Okteto's developer community!"
     }
 
 @app.post("/todo")
