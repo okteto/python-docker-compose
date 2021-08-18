@@ -23,7 +23,8 @@ jobs:
 
     - name: Deploy The Preview Environment
       uses: okteto/deploy-preview@master
-      env: ${{ secrets.GITHUB_TOKEN }}
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         name: pr-${{ github.event.number }}-namespace
         scope: personal
