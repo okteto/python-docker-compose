@@ -21,12 +21,12 @@ jobs:
       uses: actions/checkout@master
     
     - name: Login
-      uses: okteto/login@master
+    - uses: okteto/context@latest
       with:
         token: ${{ secrets.OKTETO_TOKEN }}
     
     - name: Deleting your preview environment
-      uses: okteto/destroy-preview@master
+      uses: okteto/destroy-preview@latest
       with:
         name: pr-${{ github.event.number }}-przinho
       
