@@ -4,7 +4,7 @@ services:
   api:
     build: .
     ports:
-      - 80:8080
+      - 8080:8080
 
   mongodb:
     image: bitnami/mongodb:latest
