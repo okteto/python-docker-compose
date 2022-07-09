@@ -28,6 +28,6 @@ jobs:
     - name: Deleting your preview environment
       uses: okteto/destroy-preview@latest
       with:
-        name: pr-${{ github.event.number }}-przinho
+        name: pr-${{ github.event.number }}-robsonpiere
       
       
