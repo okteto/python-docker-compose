@@ -21,7 +21,7 @@ jobs:
       uses: actions/checkout@master
     
     - name: Login
-    - uses: okteto/context@latest
+      uses: okteto/context@latest
       with:
         token: ${{ secrets.OKTETO_TOKEN }}
     

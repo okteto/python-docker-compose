@@ -16,7 +16,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - name: Login into your Dashboard
-    - uses: okteto/context@latest
+      uses: okteto/context@latest
       with:
         token: ${{ secrets.OKTETO_TOKEN }}
     
