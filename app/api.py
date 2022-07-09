@@ -27,7 +27,7 @@ def update_todo_data(id: str, item: dict):
     updated_todo = update_todo(id, item)
     if updated_todo:
         return {
-            "message": "Todo updated successfully"
+            "message": "Atualizadasso"
         }
     return {
         "error": "There was an error updating your todo"
