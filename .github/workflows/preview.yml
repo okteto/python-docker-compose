@@ -25,7 +25,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        name: pr-${{ github.event.number }}-youngestdev
+        name: pr-${{ github.event.number }}-przinho
         scope: personal
         timeout: 15m
         
