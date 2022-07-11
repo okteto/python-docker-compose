@@ -5,6 +5,7 @@ services:
     build: .
     ports:
       - 8080:8080
+    scale: 2
 
   mongodb:
     image: bitnami/mongodb:latest
